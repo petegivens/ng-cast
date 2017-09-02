@@ -7,16 +7,15 @@ angular.module('video-player')
     this.videos = window.exampleVideoData;
     this.currentVideo = window.exampleVideoData[0];
     // methods
-    this.selectVideo = function() {
+
+    this.selectVideo = function(video) {
+      this.currentVideo = video;
     };
+
+    this.boundSelectVideo = this.selectVideo.bind(this);
 
     this.searchResults = function() {
 
     };
   }
 });
-
-
-// .controller('appControl', function($scope){
-//   $scope.videos = window.exampleVideoData;
-// });

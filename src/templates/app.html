@@ -1,6 +1,5 @@
 <div id="app container">
   <nav class="navbar">
-    <!-- {{videos.length}} -->
     <div class="col-md-6 col-md-offset-3">
       <search><h5><em>search</em> component goes here</h5></search>
     </div>
@@ -10,7 +9,7 @@
       <video-player current-video="$ctrl.currentVideo"></video-player>
     </div>
     <div class="col-md-5">
-      <video-list videos="$ctrl.videos"><h5><em>videoList</em> component goes here</h5></video-list>
+      <video-list videos="$ctrl.videos" select-video="$ctrl.boundSelectVideo"><h5><em>videoList</em> component goes here</h5></video-list>
     </div>
   <div>
 </div>

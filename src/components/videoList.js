@@ -4,9 +4,8 @@ angular.module('video-player')
 
   templateUrl: 'src/templates/videoList.html',
   bindings: {
-    videos: '<'
-  },
-  controller: function() {
-    this.videos = [];
+    videos: '<',
+    selectVideo: '<'
   }
+
 });
